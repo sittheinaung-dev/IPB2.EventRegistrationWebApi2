@@ -12,7 +12,7 @@ namespace IPB2.EventRegistrationWebApi.Features.Event
         {
             _eventServices = eventServices;
         }
-
+        
         #region Create Event
         [HttpPost("create")]
         public async Task<IActionResult> CreateEvent([FromBody] EventCreateRequest request)
