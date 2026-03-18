@@ -1,0 +1,56 @@
+@MinimalApi_HostAddress = http://localhost:5000
+
+### Event Endpoints
+
+# Get Event List
+GET {{MinimalApi_HostAddress}}/api/event/list?pageNo=1&pageSize=10
+Accept: application/json
+
+###
+
+# Get Event By Id
+GET {{MinimalApi_HostAddress}}/api/event/1
+Accept: application/json
+
+###
+
+# Create Event
+POST {{MinimalApi_HostAddress}}/api/event/create
+Content-Type: application/json
+
+{
+  "eventName": "Tech Conference 2026",
+  "location": "San Francisco",
+  "eventDate": "2026-10-15T09:00:00Z",
+  "status": "Scheduled"
+}
+
+###
+
+### Participant Endpoints
+
+# Get Participant List
+GET {{MinimalApi_HostAddress}}/api/participant/list?pageNo=1&pageSize=10
+Accept: application/json
+
+###
+
+### Registration Endpoints
+
+# Get Registration List
+GET {{MinimalApi_HostAddress}}/api/registration/list
+Accept: application/json
+
+###
+
+### Report Endpoints
+
+# Available Events
+GET {{MinimalApi_HostAddress}}/api/report/available-events?pageNo=1&pageSize=10
+Accept: application/json
+
+###
+
+# Search Events
+GET {{MinimalApi_HostAddress}}/api/report/search-events?searchTerm=Tech
+Accept: application/json
