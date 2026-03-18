@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EventRegistrationMinim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EventRegistrationConsole", "IPB2.EventRegistrationConsole\IPB2.EventRegistrationConsole.csproj", "{841188CC-4418-4C26-8B90-494D0C42DEB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPB2.EventRegistrationWindowForm", "IPB2.EventRegistrationWindowForm\IPB2.EventRegistrationWindowForm.csproj", "{18C8D029-0643-45E9-85C8-4C34B9E128AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{841188CC-4418-4C26-8B90-494D0C42DEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{841188CC-4418-4C26-8B90-494D0C42DEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{841188CC-4418-4C26-8B90-494D0C42DEB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18C8D029-0643-45E9-85C8-4C34B9E128AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18C8D029-0643-45E9-85C8-4C34B9E128AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18C8D029-0643-45E9-85C8-4C34B9E128AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18C8D029-0643-45E9-85C8-4C34B9E128AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
