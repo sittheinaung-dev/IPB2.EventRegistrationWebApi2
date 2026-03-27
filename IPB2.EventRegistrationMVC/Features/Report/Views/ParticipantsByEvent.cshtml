@@ -1,0 +1,48 @@
+@model IPB2.EventRegistrationMVC.Features.Report.ParticipantsByEventResponse
+
+@{
+    ViewData["Title"] = "Participants by Event Report";
+}
+
+<h1>Participants by Event Report</h1>
+
+<div class="row mb-3">
+    <div class="col-md-4">
+        <form asp-action="ParticipantsByEvent" method="get">
+            <div class="input-group">
+                <select name="eventId" class="form-control" asp-items="ViewBag.Events">
+                    <option value="">-- Select Event --</option>
+                </select>
+                <button type="submit" class="btn btn-outline-secondary">View</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+@if (Model.Data != null && Model.Data.Any())
+{
+    @foreach (var item in Model.Data) {
+        <tr>
+            <td>@item.ParticipantName</td>
+            <td>@item.Email</td>
+            <td>@item.Phone</td>
+        </tr>
+    }
+}
+else if (Model.Data != null)
+{
+    <tr>
+        <td colspan="3" class="text-center">No participants found for this event.</td>
+    </tr>
+}
+    </tbody>
+</table>

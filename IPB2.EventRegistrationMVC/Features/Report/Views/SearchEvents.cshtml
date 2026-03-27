@@ -1,0 +1,42 @@
+@model IPB2.EventRegistrationMVC.Features.Report.SearchEventsResponse
+
+@{
+    ViewData["Title"] = "Search Events";
+}
+
+<h1>Search Events</h1>
+
+<div class="row mb-3">
+    <div class="col-md-4">
+        <form asp-action="SearchEvents" method="get">
+            <div class="input-group">
+                <input type="text" name="searchTerm" class="form-control" placeholder="Search events..." />
+                <button type="submit" class="btn btn-outline-secondary">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Event Name</th>
+            <th>Location</th>
+            <th>Date</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+@if (Model.Data != null)
+{
+    @foreach (var item in Model.Data) {
+        <tr>
+            <td>@item.EventName</td>
+            <td>@item.Location</td>
+            <td>@item.EventDate?.ToString("yyyy-MM-dd")</td>
+            <td>@item.Status</td>
+        </tr>
+    }
+}
+    </tbody>
+</table>
