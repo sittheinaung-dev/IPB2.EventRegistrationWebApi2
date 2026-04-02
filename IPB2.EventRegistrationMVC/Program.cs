@@ -1,8 +1,8 @@
 using IPB2.EventRegistrationWebApi.Database.AppDbContextModels;
-using IPB2.EventRegistrationMVC.Features.Event;
-using IPB2.EventRegistrationMVC.Features.Participant;
-using IPB2.EventRegistrationMVC.Features.Registration;
-using IPB2.EventRegistrationMVC.Features.Report;
+using IPB2.EventRegistration.Domain.Features.Event;
+using IPB2.EventRegistration.Domain.Features.Participant;
+using IPB2.EventRegistration.Domain.Features.Registration;
+using IPB2.EventRegistration.Domain.Features.Report;
 using IPB2.EventRegistrationMVC.Infrastructure;
 using Microsoft.AspNetCore.Mvc.Razor;
 

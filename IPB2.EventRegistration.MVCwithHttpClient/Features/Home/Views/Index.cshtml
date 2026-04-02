@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">IPB2 Event Registration (MVC)</h1>
+    <p class="lead">Consuming Web API through HttpClient</p>
+    
+    <div class="row mt-5">
+        <div class="col-md-3">
+            <a asp-controller="Event" asp-action="Index" class="btn btn-primary btn-lg w-100 py-4">
+                <i class="bi bi-calendar-event"></i><br/>Manage Events
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a asp-controller="Participant" asp-action="Index" class="btn btn-success btn-lg w-100 py-4">
+                <i class="bi bi-people"></i><br/>Participants
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a asp-controller="Registration" asp-action="Index" class="btn btn-info btn-lg w-100 py-4 text-white">
+                <i class="bi bi-clipboard-check"></i><br/>Registrations
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a asp-controller="Report" asp-action="Index" class="btn btn-warning btn-lg w-100 py-4 text-white">
+                <i class="bi bi-graph-up"></i><br/>Reports
+            </a>
+        </div>
+    </div>
+</div>

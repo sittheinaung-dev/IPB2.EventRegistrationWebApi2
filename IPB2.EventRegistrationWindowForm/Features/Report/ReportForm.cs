@@ -1,5 +1,5 @@
-using IPB2.EventRegistrationWebApi.Features.Event;
-using IPB2.EventRegistrationWebApi.Features.Report;
+using IPB2.EventRegistration.Domain.Features.Event;
+using IPB2.EventRegistration.Domain.Features.Report;
 
 namespace IPB2.EventRegistrationWindowForm.Features.Report
 {

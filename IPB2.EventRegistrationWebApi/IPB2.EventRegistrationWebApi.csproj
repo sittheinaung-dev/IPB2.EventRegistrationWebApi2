@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IPB2.EventRegistrationWebApi.Database\IPB2.EventRegistrationWebApi.Database.csproj" />
+    <ProjectReference Include="..\IPB2.EventRegistration.Domain\IPB2.EventRegistration.Domain.csproj" />
   </ItemGroup>
 
 </Project>

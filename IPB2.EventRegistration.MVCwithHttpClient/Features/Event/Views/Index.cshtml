@@ -1,0 +1,15 @@
+@model EventListResponse
+@{ ViewData["Title"] = "Events"; }
+<h1>Events</h1>
+<p><a asp-action="Create" class="btn btn-primary">Create New</a></p>
+<table class="table">
+    <thead><tr><th>Event Name</th><th>Location</th><th>Date</th><th>Status</th><th></th></tr></thead>
+    <tbody>
+@if (Model?.Data != null) {
+    @foreach (var item in Model.Data) {
+        <tr><td>@item.EventName</td><td>@item.Location</td><td>@item.EventDate?.ToString("yyyy-MM-dd")</td><td>@item.Status</td>
+            <td><a asp-action="Edit" asp-route-id="@item.EventId">Edit</a> | <a asp-action="Details" asp-route-id="@item.EventId">Details</a> | <a asp-action="Delete" asp-route-id="@item.EventId">Delete</a></td></tr>
+    }
+}
+    </tbody>
+</table>

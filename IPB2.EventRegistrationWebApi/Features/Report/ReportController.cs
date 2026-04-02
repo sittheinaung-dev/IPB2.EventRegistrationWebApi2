@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using IPB2.EventRegistration.Domain.Features.Report;
 
 namespace IPB2.EventRegistrationWebApi.Features.Report
 {
@@ -50,7 +51,7 @@ namespace IPB2.EventRegistrationWebApi.Features.Report
 
         #region Search Events
         [HttpGet("search-events")]
-        public async Task<IActionResult> SearchEvents([FromQuery] string searchTerm)
+        public async Task<IActionResult> SearchEvents([FromQuery] string? searchTerm)
         {
             var request = new SearchEventsRequest
             {

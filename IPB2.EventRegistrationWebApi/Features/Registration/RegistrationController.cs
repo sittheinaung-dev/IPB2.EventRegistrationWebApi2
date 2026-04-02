@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using IPB2.EventRegistration.Domain.Features.Registration;
 
 namespace IPB2.EventRegistrationWebApi.Features.Registration
 {

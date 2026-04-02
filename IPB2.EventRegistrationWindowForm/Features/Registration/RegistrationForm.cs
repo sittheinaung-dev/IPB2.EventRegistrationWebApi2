@@ -1,6 +1,6 @@
-using IPB2.EventRegistrationWebApi.Features.Event;
-using IPB2.EventRegistrationWebApi.Features.Participant;
-using IPB2.EventRegistrationWebApi.Features.Registration;
+using IPB2.EventRegistration.Domain.Features.Event;
+using IPB2.EventRegistration.Domain.Features.Participant;
+using IPB2.EventRegistration.Domain.Features.Registration;
 
 namespace IPB2.EventRegistrationWindowForm.Features.Registration
 {

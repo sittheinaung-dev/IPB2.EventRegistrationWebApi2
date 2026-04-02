@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using IPB2.EventRegistration.Domain.Features.Report;
+using IPB2.EventRegistration.Domain.Features.Event;
+using IPB2.EventRegistration.Domain.Features.Participant;
 
 namespace IPB2.EventRegistrationMVC.Features.Report
 {
@@ -25,7 +28,7 @@ namespace IPB2.EventRegistrationMVC.Features.Report
             
             if (!eventId.HasValue)
             {
-                return View(new ParticipantsByEventResponse { IsSuccess = true, Data = new List<IPB2.EventRegistrationMVC.Features.Participant.ParticipantResponse>() });
+                return View(new ParticipantsByEventResponse { IsSuccess = true, Data = new List<ParticipantResponse>() });
             }
 
             var request = new ParticipantsByEventRequest { EventId = eventId.Value };

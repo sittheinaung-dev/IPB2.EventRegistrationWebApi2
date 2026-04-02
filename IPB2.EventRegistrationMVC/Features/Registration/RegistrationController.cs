@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using IPB2.EventRegistration.Domain.Features.Registration;
 
 namespace IPB2.EventRegistrationMVC.Features.Registration
 {

@@ -1,4 +1,4 @@
-using IPB2.EventRegistrationWebApi.Features.Event;
+using IPB2.EventRegistration.Domain.Features.Event;
 
 namespace IPB2.EventRegistrationWindowForm.Features.Event
 {

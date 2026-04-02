@@ -1,8 +1,8 @@
 using IPB2.EventRegistrationWebApi.Database.AppDbContextModels;
-using IPB2.EventRegistrationWebApi.Features.Event;
-using IPB2.EventRegistrationWebApi.Features.Participant;
-using IPB2.EventRegistrationWebApi.Features.Registration;
-using IPB2.EventRegistrationWebApi.Features.Report;
+using IPB2.EventRegistration.Domain.Features.Event;
+using IPB2.EventRegistration.Domain.Features.Participant;
+using IPB2.EventRegistration.Domain.Features.Registration;
+using IPB2.EventRegistration.Domain.Features.Report;
 
 var builder = WebApplication.CreateBuilder(args);
 
